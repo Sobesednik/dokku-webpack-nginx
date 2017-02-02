@@ -1,0 +1,32 @@
+<!doctyte html>
+<html>
+    <head>
+        <title>dokku webpack nginx | sobes.io</title>
+        <link href="/dist/bundle.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300i,400,600i" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main">
+            <h1>
+            welcome to <a href="https://dokku-webpack-nginx.sobes.io">dokku webpack nginx</a>!
+            </h1>
+            Upload html files to dokku 
+
+            <pre>
+            dokku apps:create dokku-webpack-nginx
+
+            git clone git@github.com:Sobesednik/dokku-webpack-nginx.git
+            cd dokku-webpack-nginx.git
+            git remote add dokku dokku@sobes.io:new-app
+            vim app/pages/index.html 
+            ...
+            npm run build
+            git add .
+            git commit -m 'update title'
+            git push 
+            git push dokku master
+
+            </pre>
+        </div>
+        <script src="/dist/bundle.js"></script>
+    </body>
