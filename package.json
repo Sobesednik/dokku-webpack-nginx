@@ -1,0 +1,32 @@
+{
+  "name": "dokku-webpack-nginx",
+  "version": "1.0.0",
+  "description": "Build static website with webpack and push to dokku",
+  "main": "index.js",
+  "scripts": {
+    "test": "zoroaster test",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sobesednik/dokku-webpack-nginx.git"
+  },
+  "keywords": [
+    "webpack",
+    "dokku",
+    "nginx"
+  ],
+  "author": "Anton <anton@sobes.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sobesednik/dokku-webpack-nginx/issues"
+  },
+  "homepage": "https://github.com/Sobesednik/dokku-webpack-nginx#readme",
+  "devDependencies": {
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^2.0.0-rc.2",
+    "style-loader": "^0.13.1",
+    "webpack": "^2.2.1",
+    "zoroaster": "^0.2.0"
+  }
+}
